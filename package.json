@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
+    "build": "node ./scripts/create-env.js && webpack",
     "build:dev": "ENV=development webpack --config webpack.config.dev.js",
     "build:dev:watch": "ENV=development webpack --config webpack.config.dev.js --watch",
     "lint": "./node_modules/.bin/eslint"
